@@ -9,19 +9,19 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear; /* Faster spin */
   }
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start; /* Adjusted for login screen */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
+  padding-top: 20px; /* Added padding */
 }
 
 .App-link {
@@ -35,4 +35,73 @@
   to {
     transform: rotate(360deg);
   }
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password a {
+  color: black;
+  text-align: left;
+  text-decoration: none;
+}
+
+.social-login button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.google {
+  background-color: white;
+}
+
+.facebook {
+  background-color: #4267B2;
+}
+
+.apple {
+  background-color: white;
+}
+
+.signup {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  margin-top: 10px;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #B4E1FF 0%, #FFC1E3 150px)
 }
