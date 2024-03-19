@@ -1,12 +1,13 @@
 import React from 'react';
 import './UserProfile.css'; // Asegúrate de importar el CSS
+import { Link } from 'react-router-dom';
 
 const UserProfile = () => {
   return (
     <div className="user-profile">
       <header className="header">
         <nav>
-          <button>{"<"}</button>
+          <Link to="/app"><button>{"<"}</button></Link>
           <h1>Perfil</h1>
           <div></div> {/* Espacio para mantener el título centrado */}
         </nav>

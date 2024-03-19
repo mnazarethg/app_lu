@@ -103,5 +103,16 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #B4E1FF 0%, #FFC1E3 150px)
+  background-image: linear-gradient(to bottom, #B4E1FF 0%, #F9DFDE 150px)
+}
+
+.green-button {
+  background-color: #177E77;
+  ;
+  ; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
 }
