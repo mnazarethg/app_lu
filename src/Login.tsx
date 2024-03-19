@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     return (
         <>
-        <h1>Inicio de sesión</h1>
+        <div >
+            <h1 style={{ textAlign: "center" }}>Inicio de sesión</h1>
+        </div>
         <form className="login-form">
         <div className="input-group">
             <label htmlFor="email">Email</label>
@@ -17,7 +19,7 @@ const Login = () => {
         <div className="forgot-password">
             <a href="#">Olvidé mi contraseña</a>
         </div>
-        <button type="submit">Iniciar sesión</button>
+        <button className="green-button">Iniciar sesión</button>
         </form>
         <div className="social-login">
         <button className="google">Inicia sesión con Google</button>
@@ -27,10 +29,10 @@ const Login = () => {
         <div className="signup">
         <span>¿Aún no eres parte de la comunidad? Regístrate con tu email</span>
         {/* Utiliza Link para navegar al perfil */}
-        <Link to="/user-profile"><button>Regístrate</button></Link>
+        <Link to="/user-profile" className="green-button"><button>Regístrate</button></Link>
         </div>
         </>
-  );
+    )
 };
 
 

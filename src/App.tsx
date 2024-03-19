@@ -5,6 +5,12 @@ import UserProfile from './UserProfile';
 import WelcomeScreen2 from './WelcomeScreen2'; 
 import './App.css';
 
+export const StatusBar = () => {
+  return (
+    <div className="status-bar" style={{ width: '100%' }}>
+    </div>
+  );
+};
 
 function WelcomeScreen() {
   const navigate = useNavigate();
@@ -27,6 +33,7 @@ function WelcomeScreen() {
 function App() {
   return (
     <Router>
+      <StatusBar /> 
         <Routes>
           <Route path="/" element={<WelcomeScreen/>} />
           <Route path="/WelcomeScreen2" element={<WelcomeScreen2/>} />
