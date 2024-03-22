@@ -7,7 +7,7 @@ function WelcomeScreen2() {
             <h3>back home</h3>
             <p>Que Ninguna Mascota Falte De Su Hogar</p>
             <br></br>
-            <Link to="/Login"><button className="green-button">Ingresar</button></Link>
+            <Link to="/Login" className="green-button">Ingresar</Link>
         </div>
     );
   }
